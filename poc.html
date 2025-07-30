@@ -2,12 +2,6 @@
 <head><title>Totally-Legit-Website.com</title></head>
 <body>
 <h1><center>Clickjacking PoC!</center></h1>
-<h2><center>Imagine I fullzcreen the window below and silently grab all your data while you navigate...</center></h2>
-<h2><center>Also, notice the weird cookie you've got</center></h2>
-  <script>
-    // Set the cookie with name, value, and optional attributes
-    document.cookie = "Bad_Actor_=Stole_your_Cookies; path=/; SameSite=Lax";
-  </script>
 <div class="overlay"></div>
 <iframe src="https://example.com/login" width="100%" height="100%"></iframe>
 </body>
